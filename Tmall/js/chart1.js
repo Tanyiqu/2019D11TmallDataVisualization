@@ -10,7 +10,7 @@
             axisPointer: {
                 type: "shadow"
             },
-            // formatter:"亿元"
+            formatter:"{b}年：{a} {c} 亿元"
         },
         // 修改图表的大小
         grid: {
@@ -63,7 +63,7 @@
         ],
         series: [
             {
-                name: "交易额",
+                name: "成交额",
                 type: "bar",
                 barWidth: "35%",
                 data: [0.52, 9.36, 52, 191, 362, 571, 912, 1207, 1682, 2135, 2684],
