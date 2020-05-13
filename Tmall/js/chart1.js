@@ -16,7 +16,7 @@
         grid: {
             left: "0%",
             top: "4%",
-            right: "2%",
+            right: "1%",
             bottom: "4%",
             containLabel: true
         },

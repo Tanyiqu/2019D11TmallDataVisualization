@@ -31,6 +31,9 @@ header .showTime {
   color: #FFFFFF;
   font-size: 0.25rem;
 }
+header a {
+  text-decoration: none;
+}
 li {
   list-style: none;
 }
