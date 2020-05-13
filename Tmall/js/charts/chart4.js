@@ -9,7 +9,7 @@
             axisPointer: {
                 type: "shadow"
             },
-            formatter:"{b}<br/>人均 {c} 元"
+            formatter: "{b}<br/>人均 {c} 元"
         },
         color: "#8b78f6",
         grid: {
@@ -31,7 +31,7 @@
                 show: false
             },
             axisLabel: {
-                color: "#fff"
+                color: "rgba(255,255,255,.5)"
             }
 
         },
@@ -49,7 +49,8 @@
                     normal: {
                         show: true,
                         position: "inside",
-                        formatter: "{c}"
+                        formatter: "{c}",
+                        color: "rgba(255,255,255,.8)"
                     }
                 }
             }

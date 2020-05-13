@@ -4,73 +4,46 @@
     var myChart = echarts.init(document.querySelector(".pie .chart"))
     //配置项
     var option = {
-        color: ["#2f89cf"],
         tooltip: {
-            trigger: "axis",
-            axisPointer: {
-                type: "shadow"
-            },
-            formatter:"{b}年：{a} {c} 亿元"
+            trigger: 'item',
+            formatter: '{a} <br/>{b}: ({c}%)'
         },
-        // 修改图表的大小
-        grid: {
-            left: "0%",
-            top: "4%",
-            right: "1%",
-            bottom: "4%",
-            containLabel: true
+        legend: {
+            orient: 'vertical',
+            left: 10,
+            textStyle: {
+                color: "rgba(255,255,255,.5)",
+                fontSize: "12"
+            }
         },
-        xAxis: [
-            {
-                type: "category",
-                data: ['2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
-                axisTick: {
-                    alignWithLabel: true
-                },
-                // 修改刻度标签 相关样式
-                axisLabel: {
-                    color: "rgba(255,255,255,.6) ",
-                    fontSize: "12"
-                },
-                // 不显示x坐标轴的样式
-                axisLine: {
-                    show: false
-                }
-            }
-        ],
-        yAxis: [
-            {
-                type: "value",
-                // 修改刻度标签 相关样式
-                axisLabel: {
-                    color: "rgba(255,255,255,.6) ",
-                    fontSize: 12
-                },
-                // y轴的线条改为了 2像素
-                axisLine: {
-                    lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 2
-                    }
-                },
-                // y轴分割线的颜色
-                splitLine: {
-                    lineStyle: {
-                        color: "rgba(255,255,255,.1)"
-                    }
-                }
-            }
-        ],
         series: [
             {
-                name: "成交额",
-                type: "bar",
-                barWidth: "35%",
-                data: [0.52, 9.36, 52, 191, 362, 571, 912, 1207, 1682, 2135, 2684],
-                itemStyle: {
-                    // 修改柱子圆角
-                    barBorderRadius: 5
-                }
+                name: '销售占比',
+                type: 'pie',
+                radius: ['50%', '70%'],
+                avoidLabelOverlap: false,
+                label: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    label: {
+                        show: true,
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                },
+                labelLine: {
+                    show: false
+                },
+                data: [
+                    { value: 65.50, name: '天猫' },
+                    { value: 17, name: '京东' },
+                    { value: 6.10, name: '拼多多' },
+                    { value: 4.90, name: '苏宁易购' },
+                    { value: 2.60, name: '唯品会' },
+                    { value: 3.70, name: '其他' }
+                ]
             }
         ]
     };
