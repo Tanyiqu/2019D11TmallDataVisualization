@@ -9,7 +9,7 @@
             axisPointer: {
                 type: "shadow"
             },
-            formatter:"{b}：人均 {c} 元"
+            formatter:"{b}<br/>人均 {c} 元"
         },
         color: "#8b78f6",
         grid: {

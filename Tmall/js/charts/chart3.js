@@ -1,7 +1,7 @@
 //柱状图1
 (function () {
     //实例化
-    var myChart = echarts.init(document.querySelector(".bar .chart"))
+    var myChart = echarts.init(document.querySelector(".pie .chart"))
     //配置项
     var option = {
         color: ["#2f89cf"],
@@ -10,7 +10,7 @@
             axisPointer: {
                 type: "shadow"
             },
-            formatter:"{b}年<br/>{c} 亿元"
+            formatter:"{b}年：{a} {c} 亿元"
         },
         // 修改图表的大小
         grid: {
