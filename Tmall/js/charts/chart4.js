@@ -1,4 +1,4 @@
-//柱状图1
+//柱状图2
 (function () {
     //实例化
     var myChart = echarts.init(document.querySelector(".bar2 .chart"))

@@ -1,4 +1,4 @@
-//柱状图1
+//饼图
 (function () {
     //实例化
     var myChart = echarts.init(document.querySelector(".pie .chart"))
