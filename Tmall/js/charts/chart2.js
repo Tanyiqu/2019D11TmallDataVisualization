@@ -8,18 +8,6 @@
         tooltip: {
             trigger: "axis"
         },
-        // legend: {
-
-        //     data: [
-
-        //         { name: "2018" },
-        //         { name: "2019" }
-        //     ],
-        //     textStyle: {
-        //         color: "rgba(255,255,255,.5)",
-        //         fontSize: "12"
-        //     }
-        // },
         grid: {
             left: "6%",
             top: "20%",
